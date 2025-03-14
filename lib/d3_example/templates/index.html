@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D3.js Circle Example</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      .menu-button {
+        display: none;
+        cursor: pointer;
+      }
+      .menu-options {
+        display: none;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 0;
+        position: absolute;
+        white-space: nowrap;
+      }
+      .menu-option {
+        padding: 5px 15px;
+        cursor: pointer;
+        min-width: fit-content;
+      }
+      .menu-option:hover {
+        background: #f0f0f0;
+      }
+      .input-form {
+        display: none;
+        position: absolute;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .input-container {
+        display: flex;
+        align-items: center;
+      }
+      .name-input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 5px;
+        width: 200px;
+      }
+      .name-input.error {
+        border-color: red;
+        animation: shake 0.5s;
+      }
+      .submit-button {
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      .submit-button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-10px); }
+        75% { transform: translateX(10px); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+      // Create SVG container
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const svg = d3.select('#visualization')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .style('background-color', 'white');
+
+      // Clean up centering styles to use a single, clear approach
+      d3.select('#visualization')
+        .style('position', 'fixed')
+        .style('top', '0')
+        .style('left', '0')
+        .style('width', '100%')
+        .style('height', '100%')
+        .style('display', 'flex')
+        .style('justify-content', 'center')
+        .style('align-items', 'center');
+
+      // Add window resize handler
+      window.addEventListener('resize', () => {
+        svg
+          .attr('width', window.innerWidth)
+          .attr('height', window.innerHeight);
+        
+        // Update force simulation when window resizes
+        simulation.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
+        simulation.alpha(1).restart();
+      });
+      let circles = [];
+
+      function updateVisualization() {
+        const simulation = d3.forceSimulation(circles)
+          .force('charge', d3.forceManyBody().strength(-100))
+          .force('center', d3.forceCenter(width / 2, height / 2))
+          .force('x', d3.forceX().x(d => {
+            if (d.isField) {
+              const parent = circles.find(c => c.id === d.parentId);
+              return parent ? parent.x : width / 2;
+            }
+            let level = 0;
+            let current = d;
+            while (current.parentId) {
+              level++;
+              current = circles.find(c => c.id === current.parentId);
+            }
+            return 100 + (level * 400);
+          }).strength(d => d.isField ? 0.8 : 0.3))
+          .force('y', d3.forceY().y(d => {
+            if (d.isField) {
+              const parent = circles.find(c => c.id === d.parentId);
+              const fields = circles.filter(c => c.isField && c.parentId === parent.id);
+              const fieldIndex = fields.indexOf(d);
+              return parent ? parent.y + ((fieldIndex + 1) * 60) : height / 2;
+            }
+            return height / 2;
+          }).strength(d => d.isField ? 0.8 : 0.2))
+          .force('collision', d3.forceCollide().radius(d => d.radius + 20).strength(0.7))
+          .force('link', d3.forceLink(circles.filter(d => d.parentId).map(d => ({
+            source: circles.find(c => c.id === d.parentId),
+            target: d
+          }))).distance(d => d.target.isField ? 120 : 300).strength(d => d.target.isField ? 0.8 : 0.2));
+
+        // Clear existing elements
+        svg.selectAll('*').remove();
+
+        // Draw links
+        const fieldLinks = circles.filter(d => d.isField).flatMap(field1 => {
+          return circles
+            .filter(field2 => field2.isField && field2.label === field1.label && field2.parentId !== field1.parentId)
+            .map(field2 => ({
+              source: field1,
+              target: field2
+            }));
+        });
+
+        const allLinks = [
+          ...circles.filter(d => d.parentId).map(d => ({
+            source: circles.find(c => c.id === d.parentId),
+            target: d
+          })),
+          ...fieldLinks
+        ];
+
+        const links = svg.selectAll('line')
+          .data(allLinks)
+          .enter()
+          .append('line')
+          .style('stroke', '#999')
+          .style('stroke-width', 1);
+
+        // Create circle groups
+        const circleGroups = svg.selectAll('g')
+          .data(circles)
+          .enter()
+          .append('g');
+
+        // Create circles
+        const circleElements = circleGroups.append('circle')
+          .attr('r', d => {
+            d.originalRadius = d.radius || 50;
+            return d.originalRadius;
+          })
+          .attr('data-id', d => d.id)
+          .style('fill', d => d.color)
+          .style('transition', 'r 0.3s ease-in-out')
+          .on('mouseover', function(event, d) {
+            d.isHovered = true;
+            clearTimeout(d.hideTimeout);
+            d3.select(this)
+              .transition()
+              .duration(300)
+              .attr('r', 100);
+            d.radius = 100;
+            simulation.force('collision', d3.forceCollide().radius(d => d.radius + 10).strength(0.7));
+            simulation.alpha(0.3).restart();
+            d3.select(this.parentNode).select('.menu-button-group')
+              .style('display', 'block');
+          })
+          .on('mouseout', function(event, d) {
+            d.hideTimeout = setTimeout(() => {
+              if (!d.menuVisible) {
+                d.radius = d.originalRadius || 50; // Reset to original radius
+                d3.select(this)
+                  .transition()
+                  .duration(300)
+                  .attr('r', d.radius);
+                simulation.force('collision', d3.forceCollide().radius(d => d.radius + 10).strength(0.7));
+                simulation.alpha(0.3).restart();
+                d3.select(this.parentNode).select('.menu-button-group')
+                  .style('display', 'none');
+              }
+            }, 100);
+          });
+
+        // Add labels
+        circleGroups.append('text')
+          .text(d => d.label)
+          .attr('text-anchor', 'middle')
+          .attr('dy', '.3em')
+          .style('fill', d => d.color_label || 'white')
+          .style('font-size', '12px');
+
+        // Add menu buttons
+        const menuButtons = circleGroups.append('g')
+          .attr('class', 'menu-button-group')
+          .style('display', 'none')
+          .each(function(d) {
+            const group = d3.select(this);
+            group.attr('transform', `translate(${d.radius - 30}, ${-d.radius + 10})`)
+              .on('mouseover', function() {
+                clearTimeout(d.hideTimeout);
+                group.style('display', 'block');
+              })
+              .on('mouseout', function() {
+                if (!d.menuVisible) {
+                  startHideTimeout(d, this);
+                }
+              });
+
+            group.append('rect')
+              .attr('width', 30)
+              .attr('height', 20)
+              .attr('rx', 10)
+              .attr('ry', 10)
+              .style('fill', 'white')
+              .style('stroke', '#ddd')
+              .style('stroke-width', 1)
+              .style('filter', 'drop-shadow(0px 1px 2px rgba(0,0,0,0.1))');
+
+            group.append('text')
+              .attr('x', 15)
+              .attr('y', 14)
+              .attr('text-anchor', 'middle')
+              .text('...')
+              .style('font-size', '16px')
+              .style('fill', '#666')
+              .style('cursor', 'pointer')
+              .on('click', function(event) {
+                event.stopPropagation();
+                toggleMenu(d, this);
+              });
+          });
+
+        // Add input forms
+        const inputForms = circleGroups.append('foreignObject')
+          .attr('class', 'input-form')
+          .attr('width', 250)
+          .attr('height', 50)
+          .style('display', 'none')
+          .html(d => `
+            <div class="input-container">
+              <input type="text" class="name-input" placeholder="Enter child name" maxlength="256">
+              <button class="submit-button" disabled>➜</button>
+            </div>
+          `);
+
+        // Add menu options
+        const menuOptions = circleGroups.append('foreignObject')
+          .attr('class', 'menu-options')
+          .attr('width', 120)
+          .attr('height', 130)
+          .style('display', 'none')
+          .html(`
+            <div style="font-family: Arial;">
+              <div class="menu-option">Add child</div>
+              <div class="menu-option">Show fields</div>
+              <div class="menu-option">Add field</div>
+              <div class="menu-option" style="color: #e74c3c;">Delete</div>
+            </div>
+          `);
+
+        // Update positions on simulation tick
+        simulation.on('tick', () => {
+          links
+            .attr('x1', d => d.source.x)
+            .attr('y1', d => d.source.y)
+            .attr('x2', d => d.target.x)
+            .attr('y2', d => d.target.y);
+
+          circleGroups.attr('transform', d => `translate(${d.x},${d.y})`);
+        });
+
+        // Add click handlers
+        circleGroups.each(function(d) {
+          const group = d3.select(this);
+          const menuOptions = group.select('.menu-options');
+          const inputForm = group.select('.input-form');
+
+          group.selectAll('.menu-options .menu-option').on('click', function(event) {
+            event.stopPropagation();
+            const optionText = d3.select(this).text();
+            
+            if (optionText === 'Show fields') {
+              // Update menu option text
+              d3.select(this).text('Hide fields');
+              
+              // Add fields for this parent from stored fields
+              if (window.nodeFields[d.id]) {
+                circles = [...circles, ...window.nodeFields[d.id]];
+                // Update visualization with new circles
+                updateVisualization();
+              }
+            } else if (optionText === 'Hide fields') {
+              // Update menu option text back
+              d3.select(this).text('Show fields');
+              
+              // Remove fields for this parent
+              circles = circles.filter(c => !c.isField || c.parentId !== d.id);
+              
+              // Update visualization without fields
+              updateVisualization();
+            } else if (optionText === 'Delete') {
+              // Send delete request to backend
+              fetch('/delete_circle', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  id: d.id
+                })
+              })
+              .then(response => response.json())
+              .then(data => {
+                circles = data.circles;
+                updateVisualization();
+              })
+              .catch(error => console.error('Error:', error));
+            }
+            
+            menuOptions.style('display', 'none');
+            d.menuVisible = false;
+            inputForm
+              .style('display', 'block')
+              .attr('x', d.radius - 20)
+              .attr('y', -d.radius + 30);
+
+            const input = inputForm.select('input');
+            const button = inputForm.select('button');
+
+            input.on('input', function() {
+              const value = this.value.trim();
+              button.property('disabled', value.length === 0 || value.length > 256);
+              d3.select(this).classed('error', value.length > 256);
+            });
+
+            button.on('click', function() {
+              const name = input.property('value').trim();
+              if (name && name.length <= 256) {
+                fetch('/add_child', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                    parentId: d.id,
+                    name: name
+                  })
+                })
+                .then(response => response.json())
+                .then(data => {
+                  circles = data.circles;
+                  updateVisualization();
+                })
+                .catch(error => console.error('Error:', error));
+
+                inputForm.style('display', 'none');
+                input.property('value', '');
+                button.property('disabled', true);
+              }
+            });
+          });
+        });
+      }
+
+      function startHideTimeout(d, element) {
+        d.hideTimeout = setTimeout(() => {
+          const circle = d3.select(element.parentNode).select('circle');
+          const menuButton = d3.select(element.parentNode).select('.menu-button-group');
+          if (!circle.node().matches(':hover') && 
+              !menuButton.node().matches(':hover') && 
+              !d.menuVisible) {
+            d.radius = d.originalRadius || 50;
+            circle
+              .transition()
+              .duration(300)
+              .attr('r', d.radius);
+            menuButton.style('display', 'none');
+            simulation.force('collision', d3.forceCollide().radius(d => d.radius + 10).strength(0.7));
+            simulation.alpha(0.3).restart();
+          }
+        }, 100);
+      }
+
+      function toggleMenu(d, element) {
+        const group = d3.select(element.parentNode.parentNode);
+        const wasVisible = d.menuVisible;
+        d.menuVisible = !d.menuVisible;
+        
+        if (!d.menuVisible && !d.isHovered) {
+          d.radius = d.originalRadius || 50;
+          group.select('circle')
+            .transition()
+            .duration(3)
+            .attr('r', d.radius);
+          simulation.force('collision', d3.forceCollide().radius(d => d.radius + 10).strength(0.7));
+          simulation.alpha(0.3).restart();
+        }
+        
+        group.select('.menu-options')
+          .style('display', d.menuVisible ? 'block' : 'none')
+          .attr('x', -60) // Center the menu (menu width is 120px)
+          .attr('y', -d.radius - 140) // Position above the circle
+          .style('z-index', '1000'); // Ensure menu stays on top
+      }
+
+      // Load initial data
+      d3.json('/data.json').then(data => {
+        circles = data.circles.map(d => ({ ...d }));
+        // Store fields in a separate object for later use
+        window.nodeFields = data.circles.reduce((acc, d) => {
+          if (d.fields && d.fields.length > 0) {
+            acc[d.id] = d.fields.map(field => ({
+              ...field,
+              parentId: d.id,
+              isField: true
+            }));
+          }
+          return acc;
+        }, {});
+        updateVisualization();
+      }).catch(error => {
+        console.error('Error loading the JSON file:', error);
+      });
+
+      // Click away listener
+      d3.select('body').on('click', function(event) {
+        if (!event.target.closest('.input-form') && !event.target.closest('circle')) {
+          svg.selectAll('.menu-options, .input-form').style('display', 'none');
+          circles.forEach(d => {
+            d.menuVisible = false;
+            d.radius = d.originalRadius || 50;
+            d3.select(`circle[data-id="${d.id}"]`)
+              .transition()
+              .duration(300)
+              .attr('r', d.radius);
+            circleGroups.on('mouseleave', function(event, d) {
+              if (!d.menuVisible) {
+                d.isHovered = false;
+                d.radius = d.originalRadius || 50;
+                d3.select(this).select('circle')
+                  .transition()
+                  .duration(300)
+                  .attr('r', d.radius);
+                d3.select(this).select('.menu-button-group')
+                  .style('display', 'none');
+                simulation.force('collision', d3.forceCollide().radius(d => d.radius + 10).strength(0.7));
+                simulation.alpha(0.3).restart();
+              }
+            });
+          });
+          simulation.force('collision', d3.forceCollide().radius(d => d.radius + 10).strength(0.7));
+          simulation.alpha(0.3).restart();
+        }
+      });
+    </script>
+  </body>
+</html>

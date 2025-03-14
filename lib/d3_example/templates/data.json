@@ -1,0 +1,1653 @@
+{
+    "circles": [
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Kamala Harris",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Nancy Pelosi",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Mitch McConnell",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Chuck Schumer",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Kevin McCarthy",
+                    "radius": 20
+                }
+            ],
+            "id": 1,
+            "label": "US Government",
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Lonnie G. Bunch III",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "David J. Skorton",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Wayne Clough",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "James Smithson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Cristián Samper",
+                    "radius": 20
+                }
+            ],
+            "id": 2,
+            "label": "Smithsonian Institution",
+            "parentId": 1,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "John G. Roberts, Jr.",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Kamala Harris",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Steve Case",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Risa J. Lavizzo-Mourey",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "John W. McCarter, Jr.",
+                    "radius": 20
+                }
+            ],
+            "id": 3,
+            "label": "Board of Regents",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Kamala Harris",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Mike Pence",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Joe Biden",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Dick Cheney",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Al Gore",
+                    "radius": 20
+                }
+            ],
+            "id": 4,
+            "label": "Vice President",
+            "parentId": 3,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "John G. Roberts, Jr.",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "William Howard Taft",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Earl Warren",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Warren E. Burger",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Salmon P. Chase",
+                    "radius": 20
+                }
+            ],
+            "id": 5,
+            "label": "Chief Justice",
+            "parentId": 3,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Patrick Leahy",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Mitt Romney",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Chuck Schumer",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Susan Collins",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Bernie Sanders",
+                    "radius": 20
+                }
+            ],
+            "id": 6,
+            "label": "Senators (3)",
+            "parentId": 3,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Nancy Pelosi",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Kevin McCarthy",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Steny Hoyer",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Jim Jordan",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Maxine Waters",
+                    "radius": 20
+                }
+            ],
+            "id": 7,
+            "label": "Representatives (3)",
+            "parentId": 3,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Steve Case",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Risa J. Lavizzo-Mourey",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "John W. McCarter, Jr.",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "David M. Rubenstein",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Roger W. Sant",
+                    "radius": 20
+                }
+            ],
+            "id": 8,
+            "label": "Citizen Members (9)",
+            "parentId": 3,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Anthea M. Hartig",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "John Gray",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Brent D. Glass",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Spencer R. Crew",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Roger G. Kennedy",
+                    "radius": 20
+                }
+            ],
+            "id": 9,
+            "label": "National Museum of American History",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Kirk Johnson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Cristián Samper",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Robert Sullivan",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Charles Doolittle Walcott",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Richard S. Fiske",
+                    "radius": 20
+                }
+            ],
+            "id": 10,
+            "label": "National Museum of Natural History",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Ellen Stofan",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "John R. Dailey",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Chris Browne",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Michael Collins",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Martin Harwit",
+                    "radius": 20
+                }
+            ],
+            "id": 11,
+            "label": "National Air and Space Museum",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Charles Alcock",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Irwin I. Shapiro",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "George B. Field",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Fred Lawrence Whipple",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Harlow Shapley",
+                    "radius": 20
+                }
+            ],
+            "id": 12,
+            "label": "Smithsonian Astrophysical Observatory",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Anson Hines",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Tuck Hines",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Dennis Whigham",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Gregory Ruiz",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Thomas E. Jordan",
+                    "radius": 20
+                }
+            ],
+            "id": 13,
+            "label": "Smithsonian Environmental Research Center",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Matthew Larsen",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Ira Rubinoff",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Eldredge Bermingham",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Nancy Knowlton",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "William Wcislo",
+                    "radius": 20
+                }
+            ],
+            "id": 14,
+            "label": "Smithsonian Tropical Research Institute",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Steven Monfort",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Dennis Kelly",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "John Berry",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Michael Robinson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Theodore Reed",
+                    "radius": 20
+                }
+            ],
+            "id": 15,
+            "label": "National Zoological Park",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Kevin Gover",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "W. Richard West, Jr.",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Machel Monenerkit",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Rick Hill",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Tim McClimon",
+                    "radius": 20
+                }
+            ],
+            "id": 16,
+            "label": "National Museum of the American Indian",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Lonnie G. Bunch III",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Kevin Young",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Kinshasha Holman Conwill",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Rex Ellis",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Nancy Bercaw",
+                    "radius": 20
+                }
+            ],
+            "id": 17,
+            "label": "National Museum of African American History",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Charles Lang Freer",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Julian Raby",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Chase F. Robinson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Milo Beach",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Thomas Lawton",
+                    "radius": 20
+                }
+            ],
+            "id": 18,
+            "label": "Freer Gallery of Art",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Arthur M. Sackler",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Julian Raby",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Chase F. Robinson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Milo Beach",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Thomas Lawton",
+                    "radius": 20
+                }
+            ],
+            "id": 19,
+            "label": "Arthur M. Sackler Gallery",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Augustus Casely-Hayford",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Johnnetta B. Cole",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Christine Mullen Kreamer",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Sharon F. Patton",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Sylvia H. Williams",
+                    "radius": 20
+                }
+            ],
+            "id": 20,
+            "label": "National Museum of African Art",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Melissa Chiu",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Joseph Hirshhorn",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Ned Rifkin",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "James T. Demetrion",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Abram Lerner",
+                    "radius": 20
+                }
+            ],
+            "id": 21,
+            "label": "Hirshhorn Museum and Sculpture Garden",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Stephanie Stebich",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Elizabeth Broun",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Charles C. Eldredge",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Joshua C. Taylor",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "David C. Ward",
+                    "radius": 20
+                }
+            ],
+            "id": 22,
+            "label": "Smithsonian American Art Museum",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Kim Sajet",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Martin E. Sullivan",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Carolyn K. Carr",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Marc Pachter",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Alan Fern",
+                    "radius": 20
+                }
+            ],
+            "id": 23,
+            "label": "National Portrait Gallery",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Maria Nicanor",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Caroline Baumann",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Bill Moggridge",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Paul Warwick Thompson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Lisa Taylor",
+                    "radius": 20
+                }
+            ],
+            "id": 24,
+            "label": "Cooper Hewitt, Smithsonian Design Museum",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Melanie Adams",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Camille Akeju",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Sharon Reinckens",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Steven Newsome",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "John Kinard",
+                    "radius": 20
+                }
+            ],
+            "id": 25,
+            "label": "Anacostia Community Museum",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Anne Van Camp",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Edie Hedlin",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "William Deiss",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Pamela Henson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Robert McC. Adams",
+                    "radius": 20
+                }
+            ],
+            "id": 26,
+            "label": "Smithsonian Institution Archives",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Nancy E. Gwinn",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Mary Augusta Thomas",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Barbara J. Smith",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Carolyn Hahn",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "John F. Cole",
+                    "radius": 20
+                }
+            ],
+            "id": 27,
+            "label": "Smithsonian Libraries",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Steven Monfort",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "David Wildt",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Christen Wemmer",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Pierre Comizzoli",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "JoGayle Howard",
+                    "radius": 20
+                }
+            ],
+            "id": 28,
+            "label": "Smithsonian Conservation Biology Institute",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Eduardo Díaz",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Pilar O'Leary",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Ranald Woodaman",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Diana Bossa",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Adriana Bianco",
+                    "radius": 20
+                }
+            ],
+            "id": 29,
+            "label": "Smithsonian Latino Center",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Justin Morrill",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Jonathan Baldwin Turner",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Ezra Cornell",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Andrew Dickson White",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Daniel Coit Gilman",
+                    "radius": 20
+                }
+            ],
+            "id": 30,
+            "label": "Colleges",
+            "parentId": 2,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Justin Morrill",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Jonathan Baldwin Turner",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Ezra Cornell",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Morrill Wyman",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Seaman A. Knapp",
+                    "radius": 20
+                }
+            ],
+            "id": 31,
+            "label": "Land-Grant Colleges",
+            "parentId": 30,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Peter Bonfield",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Geoff Petts",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Malcolm Kirkup",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Quintin Hogg",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Terence Burlin",
+                    "radius": 20
+                }
+            ],
+            "id": 32,
+            "label": "University of Westminster",
+            "parentId": 30,
+            "radius": 35
+        },
+        {
+            "color": "#3498db",
+            "color_label": "#ADD8E6",
+            "fields": [
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_1",
+                    "isField": true,
+                    "label": "Kathryn E. Jeffery",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_2",
+                    "isField": true,
+                    "label": "Chui L. Tsang",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_3",
+                    "isField": true,
+                    "label": "Nancy Greenstein",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_4",
+                    "isField": true,
+                    "label": "Piedad Robertson",
+                    "radius": 20
+                },
+                {
+                    "color": "#2ecc71",
+                    "color_label": "#ffffff",
+                    "id": "field_5",
+                    "isField": true,
+                    "label": "Richard Moore",
+                    "radius": 20
+                }
+            ],
+            "id": 33,
+            "label": "Community Colleges (e.g., Santa Monica)",
+            "parentId": 30,
+            "radius": 35
+        }
+    ]
+}
